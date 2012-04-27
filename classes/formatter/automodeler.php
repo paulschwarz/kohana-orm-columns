@@ -11,17 +11,8 @@ class Formatter_Automodeler extends Formatter {
 
     protected function format_detail($detail_key, $detail_val)
     {
-        switch ($detail_key)
-        {
-            case 'type':
-                return array($detail_key, $detail_val);
-            case 'is_nullable':
-                if ($detail_val)
-                {
-                    return array('null', $detail_val);
-                }
-                return;
-        }
+        // Empty arrays for now, until I know what auto-modeler does
+        return;
     }
 
 }
