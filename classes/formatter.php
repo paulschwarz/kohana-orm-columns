@@ -28,7 +28,7 @@ abstract class Formatter {
 
             foreach ($table_columns as $column_name => $column_details)
             {
-                $buffer .= __('    \':col\' = array('.$this->fields($column_details).');'.PHP_EOL,
+                $buffer .= __('    \':col\' => array('.$this->fields($column_details).');'.PHP_EOL,
                     array(':col' => $column_name));
             }
 
